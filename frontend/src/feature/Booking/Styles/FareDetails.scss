@@ -1,0 +1,69 @@
+.right-container {
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch !important;
+
+    .bottom {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      .gray-text {
+        display: flex;
+        align-items: center;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .rupee {
+    font-size: 0.9rem !important;
+    color: #868686 !important;
+  }
+
+  .fare-details {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .gray-text {
+    font-size: 0.8rem !important;
+  }
+  .upper {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .horizontal-line{
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .lower{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    p{
+      display: flex;
+      align-items: center;
+      .material-icons{
+        font-size: 1rem;
+      }
+    }
+  }
+}

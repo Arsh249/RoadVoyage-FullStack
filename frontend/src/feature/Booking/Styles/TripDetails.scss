@@ -1,0 +1,68 @@
+.duration {
+  display: flex;
+  align-items: center;
+
+  .duration_time {
+    font-size: 0.7rem;
+    border: 1px solid #d1d1d1;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: default;
+  }
+  .dashed-line {
+    width: 5vw;
+    margin: 0 0.6rem;
+    border-bottom: 2px dashed #d1d1d1;
+  }
+
+  .duration_time:hover {
+    color: #d1d1d1;
+  }
+}
+.dashed-line {
+  border-bottom: 1px dashed #d1d1d1;
+  flex-grow: 1;
+  margin: 10px 0;
+}
+
+.trip-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+  .upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .lower-section {
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      font-weight: 500;
+    }
+    .date-time {
+      font-size: 0.8rem;
+      span {
+        font-weight: bolder;
+      }
+    }
+
+    > div:not(.duration) {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+}

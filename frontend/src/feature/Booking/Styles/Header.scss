@@ -1,0 +1,21 @@
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #551615;
+  padding: 20px 40px;
+  color: #ffffff;
+  font-weight: 100 !important;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  > div {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .material-icons {
+      font-size: 1rem;
+    }
+  }
+}

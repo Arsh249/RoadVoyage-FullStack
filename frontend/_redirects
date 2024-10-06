@@ -1,0 +1,3 @@
+/old-page    /new-page    301
+/old-blog/*    /new-blog/:splat    301
+/temp-redirect    /new-location    302

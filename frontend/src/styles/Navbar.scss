@@ -1,0 +1,53 @@
+@import "colors";
+.navbar-container {
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+
+  .navbar {
+    max-width: 1250px;
+    flex-grow: 1;
+    padding-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .bus-icon {
+        display: flex;
+        align-items: center;
+        color: $brand;
+        gap: 5px;
+      }
+    }
+    .filter-and-auth-container {
+      display: flex;
+      align-items: center;
+      .auth-btn {
+        color: $brand;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: inherit;
+        p {
+          font-size: 1.1rem;
+        }
+      }
+      .auth-btn:hover {
+        cursor: pointer;
+        background-color: #e9e6e6;
+      }
+    }
+  }
+}
+.logout-btn {
+  border: none !important;
+  color: $brand;
+  background-color: inherit;
+  cursor: pointer;
+}

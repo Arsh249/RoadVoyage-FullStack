@@ -1,0 +1,66 @@
+@import "../../../styles/colors.scss";
+
+.bookings-container {
+  .booking-tabs {
+    .ant-tabs-tab {
+      padding-inline: 35px;
+      color: #868686;
+      font-size: 1rem;
+    }
+    .ant-tabs-tab-active {
+      //   border-bottom:px solid $brand;
+      .ant-tabs-tab-btn {
+        color: $brand !important;
+      }
+    }
+  }
+
+  .bookings {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .booking {
+      background-color: #716c6c28;
+      padding: 10px;
+      border-radius: 10px;
+
+      .passenger-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        tbody {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+        .passenger {
+          display: grid;
+          grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+          background-color: #ffffffe1;
+          padding: 5px;
+          border-radius: 5px;
+          color: #868686;
+          text-align: center;
+          .material-icons{
+            // color: black;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .booking:hover {
+      box-shadow: 0 0 10px 2px gray;
+    }
+
+    .no-bookings {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #fdf7f6;
+      color: $brand;
+      font-size: 1rem;
+    }
+  }
+}

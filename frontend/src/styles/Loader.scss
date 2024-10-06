@@ -1,0 +1,77 @@
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    animation: outBox 3s linear 0s infinite;
+    div {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: gray;
+    }
+    div:nth-child(1) {
+      animation: innerBox1 1s ease-out 0s infinite alternate;
+    }
+    div:nth-child(2) {
+      animation: innerBox2 1s ease-out 0s infinite alternate;
+    }
+    div:nth-child(3) {
+      animation: innerBox3 1s ease-out 0s infinite alternate;
+    }
+    div:nth-child(4) {
+      animation: innerBox4 1s ease-out 0s infinite alternate;
+    }
+  }
+}
+
+@keyframes innerBox1 {
+  from {
+    transform: translateY(0px) scale(1);
+    
+  }
+  to {
+    transform: translateY(-50px) scale(5);
+  }
+}
+@keyframes innerBox2 {
+  from {
+    
+    transform: translateX(0px) scale(1);
+  }
+  to {
+    transform: translateX(50px) scale(5);
+  }
+}
+@keyframes innerBox3 {
+  from {
+    
+    transform: translateX(0px) scale(1);
+  }
+  to {
+    transform: translateX(-50px) scale(5);
+  }
+}
+@keyframes innerBox4 {
+  from {
+    
+    transform: translateY(0px) scale(1);
+  }
+  to {
+    transform: translateY(50px) scale(5);
+  }
+}
+
+@keyframes outBox {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

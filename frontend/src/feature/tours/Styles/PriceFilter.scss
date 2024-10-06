@@ -1,0 +1,29 @@
+@import "../../../styles/colors.scss";
+
+.price_filter_container {
+  padding-inline: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #e53935;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  .material-icons {
+    font-size: 0.9rem;
+  }
+}
+
+.filter-button.selected {
+  background-color: $brand;
+  color: white;
+}

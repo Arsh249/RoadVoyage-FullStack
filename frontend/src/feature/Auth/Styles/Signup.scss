@@ -1,0 +1,41 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-weight: 100;
+  }
+
+  input::placeholder {
+    color: #b5b5b5;
+  }
+  input,.password {
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: #eb5353;
+  }
+
+  .date-picker {
+    cursor: pointer;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding: 20px 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff !important;
+    font-size: 1rem;
+    background-color: #eb5353;
+  }
+  button:hover {
+    background-color: #9e4242eb !important;
+    cursor: pointer;
+  }
+}

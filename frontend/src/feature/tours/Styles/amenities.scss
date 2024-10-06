@@ -1,0 +1,30 @@
+.amenities-container {
+  width: 430px;
+  > div:first-child {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  h4 {
+    color: rgb(30, 23, 23);
+    font-weight: 600;
+  }
+  .amenities-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 10px;
+
+      .material-icons {
+        font-size: 0.9rem;
+      }
+      p{
+        font-weight: 100;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

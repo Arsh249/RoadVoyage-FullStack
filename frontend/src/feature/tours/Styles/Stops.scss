@@ -1,0 +1,133 @@
+@import "../../../styles/colors.scss";
+
+.stops {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .stops_container {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    > div:first-child {
+      padding: 10px;
+      border-bottom: 1px solid #f2f2f2;
+
+      .search_bar {
+        display: flex;
+
+        span {
+          color: #868686;
+          font-size: 1.2rem;
+        }
+
+        input {
+          color: #b0b0b0;
+          border: none;
+          font-size: 0.9rem;
+          outline: none;
+        }
+      }
+    }
+
+    .point-list::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .point-list::-webkit-scrollbar-track {
+      background: #fcefef;
+    }
+
+    .point-list::-webkit-scrollbar-thumb {
+      background-color: #ea8787;
+      border-radius: 10px;
+    }
+
+    .point-list {
+      margin-top: 10px;
+      padding: 0 10px;
+      overflow-y: scroll;
+      height: 170px;
+
+      .point {
+        margin: 15px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+
+        .check {
+          display: flex;
+          align-items: start;
+          gap: 10px;
+
+          .point-name {
+            font-size: 1rem;
+            font-weight: lighter;
+          }
+
+          label {
+            cursor: pointer;
+          }
+        }
+
+        .time {
+          font-size: 0.9rem;
+          white-space: nowrap;
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .continue_booking {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-weight: lighter;
+        font-size: 0.9rem;
+      }
+
+      span {
+        color: $brand;
+        font-weight: 700;
+      }
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .disabled {
+      background-color: #d1d1d1;
+      color: #bcb3b0;
+      cursor: not-allowed;
+    }
+
+    .enabled {
+      background-color: $brand;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .anabled:hover {
+      background-color: rgb(161, 72, 71);
+    }
+  }
+}

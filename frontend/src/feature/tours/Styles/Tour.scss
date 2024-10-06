@@ -1,0 +1,148 @@
+@import "../../../styles/colors.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: ixi-type, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  background-color: #f4f4f4;
+}
+
+.tours_container {
+  width: 75vw;
+  @media (max-width: 1250px) {
+    width: 80vw;
+  }
+  @media (max-width: 950px) {
+    width: 100vw;
+  }
+}
+
+.tour_container {
+  background-color: #ffffff;
+  transition: box-shadow 0.1s ease;
+  border-radius: 10px;
+  // cursor: pointer;
+  .layout {
+    padding: 8px;
+  }
+}
+
+.tour_card {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+}
+
+.left_col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #f2f2f2;
+
+  .bus_details {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid #f2f2f2;
+
+    > div > b {
+      font-size: 1.2rem;
+    }
+
+    .timings {
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .duration {
+        display: flex;
+        align-items: center;
+
+        .dashed-line {
+          width: 2vw;
+          border-bottom: 2px dashed #d1d1d1;
+          flex-grow: 1;
+          margin: 0 0.5rem;
+        }
+
+        .duration_time {
+          font-size: 0.7rem;
+          border: 1px solid #d1d1d1;
+          padding: 5px;
+          border-radius: 5px;
+          cursor: default;
+        }
+
+        .duration_time:hover {
+          color: #d1d1d1;
+        }
+      }
+    }
+  }
+}
+
+.light_color {
+  color: #8a99a5;
+  padding: 2px 0;
+  font-size: 0.9rem;
+}
+
+.right_col {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+
+  .price_card {
+    text-align: end;
+    align-self: flex-end;
+
+    p {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+
+    h5 {
+      padding: 5px;
+      font-size: 1.5rem;
+      display: flex;
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+
+  .seat_card {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      padding: 10px 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: $brand;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(161, 72, 71);
+    }
+
+    p {
+      padding: 5px 0;
+      align-self: center;
+      text-align: center;
+    }
+  }
+}

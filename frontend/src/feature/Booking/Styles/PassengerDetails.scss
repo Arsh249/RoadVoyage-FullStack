@@ -1,0 +1,80 @@
+.passenger-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .passengers-details {
+    margin-top: 20px;
+
+    .passenger-input {
+      > p {
+        span {
+          color: #61b00f;
+        }
+      }
+
+      .input-container {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        margin: 10px 0;
+
+        .name-input,
+        .age-input {
+          background-color: #f4f4f4;
+          padding: 10px 15px;
+          border-radius: 10px;
+          font-size: 1rem;
+          font-weight: 600;
+          outline: none;
+          border: none;
+          cursor: text;
+        }
+        .name-input {
+          width: 300px;
+        }
+
+        .age-input {
+          flex-grow: 1;
+          display: flex;
+        }
+
+        .age-input-container {
+          display: flex;
+          white-space: wrap;
+        }
+
+        .gender-input {
+          padding: 7px;
+          border-radius: 10px;
+        }
+        @media (max-width: 650px) {
+          .name-input {
+            width: 100%;
+          }
+          .age-input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .continue-btn {
+    border: none;
+    background-color: #dc635b;
+    padding: 23px;
+    color: #ffffff !important;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    .material-icons {
+      font-size: 1rem;
+    }
+  }
+  .continue-btn:hover {
+    background-color: #9f514b !important;
+  }
+}

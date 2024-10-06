@@ -1,0 +1,152 @@
+.tour-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../../public/images/searchbus.webp);
+  box-shadow: inset 0 0 10px  black;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  gap: 20px;
+  padding: 20px;
+  .tour-heading h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+.tour-search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.location-search,
+.date-picker {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid #f2f2f2;
+  border-radius: 7px;
+  position: relative;
+}
+
+.location-search input {
+  outline: none;
+  color: #282b20;
+}
+
+.text-color {
+  align-items: center;
+  margin: 0 10px;
+  color: #212121;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.station-input {
+  color: #b0b0b0;
+  background-color: #fff;
+  border: #f2f2f2;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.station-input.focused {
+  border-color: #a34943;
+}
+
+.search-button {
+  background-color: #dc635b;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px 20px;
+  outline: none;
+  border-radius: 12px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cities {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  max-width: 240px;
+  top: 60px;
+  z-index: 10;
+  width: 100%;
+  max-height: 230px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.cities::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cities::-webkit-scrollbar-thumb {
+  background-color: #e7928c;
+  border-radius: 10px;
+}
+
+.cities::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.city {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background: #f0f0f0;
+}
+
+.cities-selection {
+  display: flex;
+  gap: 10px;
+}
+
+.text-dark {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.text-light {
+  color: #212121;
+  font-size: 12px;
+}
+
+.cities-states {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}

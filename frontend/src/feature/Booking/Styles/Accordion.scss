@@ -1,0 +1,26 @@
+.accordion {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  h2{
+    font-weight:600;
+  }
+  button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+
+    >div{
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+    .material-icons {
+      color: #dc635b;
+    }
+  }
+}

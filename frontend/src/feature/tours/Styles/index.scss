@@ -1,0 +1,28 @@
+.root-tours-container {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  gap: 20px;
+  padding: 20px 50px;
+  height: 100vh;
+  box-sizing: border-box;
+  .tours_container {
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .root-tours-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 0;
+    padding-bottom: 20px;
+    .tours_container{
+      padding: 5px;
+    }
+  }
+}

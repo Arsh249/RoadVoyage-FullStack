@@ -1,0 +1,24 @@
+@import "../../../styles/colors.scss";
+
+.selected-point {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > div > p:first-child {
+    color: #868696;
+    font-size: 0.9rem;
+  }
+  .change-point {
+    padding: 9px 15px;
+    border: 1px solid $brand;
+    border-radius: 8px;
+    color: $brand;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+}

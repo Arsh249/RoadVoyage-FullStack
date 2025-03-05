@@ -72,16 +72,18 @@ const TourSearch = () => {
     dispatch(updateSelectedDate(date));
   };
 
-  const handleInputChange = (e, inputType) => {
-    const value = e.target.value;
-    setSearchValue(value);
-    if (inputType === "from" && value === "") {
-      dispatch(updateSourceCity(null));
-    } else if (inputType === "to" && value === "") {
-      dispatch(updateDestCity(null));
-    }
-    setShowSuggestions(true); // Show suggestions on input change
-  };
+const handleInputChange = (e, inputType) => {
+  const value = e.target.value;
+  setSearchValue(value);
+  if (inputType === "from" && value != "") {
+    console.log("if");
+    dispatch(updateSourceCity(value.trim()));
+  } else if (inputType === "to" && value != "") {
+    console.log("else");
+    dispatch(updateDestCity(value.trim()));
+  }
+  setShowSuggestions(true); // Show suggestions on input change
+};
 
   const handleKeyDown = (e, inputType) => {
     if (e.key === "Backspace" && !searchValue) {

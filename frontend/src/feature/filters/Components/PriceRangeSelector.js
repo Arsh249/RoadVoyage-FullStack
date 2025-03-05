@@ -5,10 +5,13 @@ import { priceRangeSelector } from "../redux/selectors";
 
 export const PriceRangeSelector = () => {
   const { range, selectedRange } = useSelector(priceRangeSelector);
+  console.log(range, "range");
+  console.log(selectedRange, "selectedRange");
 
   const dispatch = useDispatch();
 
   const onChangeRange = (value) => {
+    console.log(value, "value");
     dispatch(updateSelectedPriceRange(value));
   };
 

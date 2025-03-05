@@ -41,6 +41,7 @@ const filtersSlice = createSlice({
     updatePriceRange: (state, action) => {
       state[filterKeys.PRICE_RANGE].range = action.payload;
       state[filterKeys.PRICE_RANGE].selectedRange = action.payload;
+      console.log(action, state);
     },
     updateSelectedPriceRange: (state, action) => {
       state[filterKeys.PRICE_RANGE].selectedRange = action.payload;

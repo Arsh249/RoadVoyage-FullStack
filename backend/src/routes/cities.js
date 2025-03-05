@@ -5,6 +5,7 @@ const { findCities } = require("../services/citiesServices.js");
 router.get(cities, async (req, resp) => {
   try {
     const cities = await findCities();
+    //console.log(cities)
     return resp.status(200).json({ cities });
   } catch (error) {
     return resp.status(500).json({ message: error.message });
